@@ -6,8 +6,8 @@
 
 ##### [Apriori算法](https://github.com/GeorgeeeLiu/data_analysis/blob/master/Apriori%E7%AE%97%E6%B3%95_FrequentItemset/Apriori.ipynb)
 
-#### [FPgrowth算法](https://github.com/GeorgeeeLiu/data_analysis/blob/master/FPGrowth%E7%AE%97%E6%B3%95_FrequentItemset/FPGrowth.ipynb)
+##### [FPgrowth算法](https://github.com/GeorgeeeLiu/data_analysis/blob/master/FPGrowth%E7%AE%97%E6%B3%95_FrequentItemset/FPGrowth.ipynb)
 
-#### [LSH算法](https://github.com/GeorgeeeLiu/data_analysis/blob/master/LSH%E7%AE%97%E6%B3%95/lsh.ipynb)
+##### [LSH算法](https://github.com/GeorgeeeLiu/data_analysis/blob/master/LSH%E7%AE%97%E6%B3%95/lsh.ipynb)
 
 ##### [MapReduce(简要进行Wordcount)](https://github.com/GeorgeeeLiu/data_analysis/blob/master/MapReduce/MapReduce.ipynb)
