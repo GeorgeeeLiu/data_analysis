@@ -2,6 +2,8 @@
 
 ### 这是一个关于数据分析的Repo
 
+* 本项目主要使用jupyter notebook作为IDE结合python对常用算法进行实现，入门指南(英文版)点这里：[Jupyter以及一些常用包入门指南](https://github.com/GeorgeeeLiu/data_analysis/blob/master/Basic%20Operation%20on%20Jupyter/Basic%20Operation%20on%20Jupyter.ipynb)
+
 #### 常用算法：
 
 ##### [Apriori算法](https://github.com/GeorgeeeLiu/data_analysis/blob/master/Apriori%E7%AE%97%E6%B3%95_FrequentItemset/Apriori.ipynb)
