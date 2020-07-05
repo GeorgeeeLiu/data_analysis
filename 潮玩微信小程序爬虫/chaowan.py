@@ -14,6 +14,7 @@ def getSeriesID(keyword):
     SeriesID = jsonpath.jsonpath(html, '$..items')[3]
     return SeriesID
 
+
 # 获得系列信息
 def getSeriesInfo(SeriesID):
     URL = 'https://api.imagefield.cn/trade/v2/categories?tagId={}&limit=100000&offset=0'.format(SeriesID)
@@ -33,11 +34,18 @@ def getProductInfo(productid):
     re = requests.get(URL)
     html = json.loads(re.text)
     count = jsonpath.jsonpath(html, 'count')[0]
-    productid = jsonpath.jsonpath(html, '$..id')
-    productname = jsonpath.jsonpath(html, '$..name')[::3]  # 名称
-    minPrice = jsonpath.jsonpath(html, '$..minPrice')  # 最低价格
-    minOnlinePrice = jsonpath.jsonpath(html, '$..minOnlinePrice')
-    orderCount = jsonpath.jsonpath(html, '$..orderCount')  # 付款人数
+    if count == 0:
+        productid = None
+        productname = None
+        minPrice = None
+        minOnlinePrice = None
+        orderCount = None
+    else:
+        productid = jsonpath.jsonpath(html, '$..id')
+        productname = jsonpath.jsonpath(html, '$..name')[::3]  # 名称
+        minPrice = jsonpath.jsonpath(html, '$..minPrice')  # 最低价格
+        minOnlinePrice = jsonpath.jsonpath(html, '$..minOnlinePrice')
+        orderCount = jsonpath.jsonpath(html, '$..orderCount')  # 付款人数
     return count, productid, productname, minPrice, orderCount, minOnlinePrice
 
 

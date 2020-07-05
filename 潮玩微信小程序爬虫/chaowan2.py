@@ -5,7 +5,7 @@ import os
 import xlsxwriter
 
 # 这里改关键词
-keyword = 'repolar'  # 自行更改关键词
+keyword = 'LABUBU'  # 自行更改关键词
 
 r_kw = getSeriesID(keyword)
 name = r_kw[0]['name']
@@ -16,6 +16,7 @@ name_xlsx = '{}系列信息.xlsx'.format(keyword)
 # 删除重名的旧excel
 if os.path.exists(name_xlsx):
     os.remove(name_xlsx)
+
 # 创建新excel
 workbook = xlsxwriter.Workbook(name_xlsx)
 worksheet = workbook.add_worksheet('潮玩{}系列'.format(keyword))
